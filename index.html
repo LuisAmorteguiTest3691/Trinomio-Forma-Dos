@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Factorización de Trinomios (ax²+bx+c)</title>
+  
+  <!-- Configuración de MathJax para renderizar LaTeX -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$','$$'], ['\\[','\\]']]
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+  
+  <link rel="stylesheet" href="css/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+  <h1>Factorización de Trinomios</h1>
+  <h2>Método "ac" y Fórmula General</h2>
+  
+  <div class="polynomial-container">
+    <label for="userPolynomial">
+      Ingrese el trinomio (ejemplos: <em>6x^2-31x+40</em> o <em>2x^2+7x+3</em>):
+    </label><br>
+    <input type="text" id="userPolynomial" placeholder="ax^2+bx+c" />
+    <button id="factorBtn">Factorizar</button>
+  </div>
+  
+  <!-- Aquí se mostrarán los pasos -->
+  <div id="steps"></div>
+  
+  <script src="js/script.js"></script>
+</body>
+</html>
